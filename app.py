@@ -239,7 +239,7 @@ def profile():
         db.session.commit()
         return redirect(f'/users/{g.user.id}')
     
-    return render_template('users/edit.html', form=form)
+    return render_template('users/edit.html', form=form, user=user)
     # IMPLEMENT THIS
 
 
